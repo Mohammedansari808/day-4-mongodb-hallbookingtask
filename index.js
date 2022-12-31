@@ -45,6 +45,8 @@ const bookroom2 = [
         "room_name": "room2"
     }
 ]
+
+
 console.log(rooms)
 //  http://localhost:4000/rooms
 app.get("/rooms", function (request, response) {
