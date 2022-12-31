@@ -3,8 +3,7 @@ import rooms from "./room.json"assert { type: "json" }
 import * as dotenv from 'dotenv'
 dotenv.config()
 const app = express();
-const MONGO_URL = "mongo"
-const PORT = (process.env.PORT);
+const PORT = process.env.PORT;
 const room =
     [
         {
@@ -48,10 +47,9 @@ const bookroom2 = [
 
 
 console.log(rooms)
-//  http://localhost:4000/rooms
-app.get("/rooms", function (request, response) {
+//  http://localhost:4000/
+app.get("/", function (request, response) {
     response.send(room);
-
 });
 
 
