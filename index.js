@@ -1,10 +1,10 @@
 import express from 'express';
 import rooms from "./room.json"assert { type: "json" }
-import fs from 'fs';
-import { MongoClient } from 'mongodb';
+import * as dotenv from 'dotenv'
+dotenv.config()
 const app = express();
 const MONGO_URL = "mongo"
-const PORT = process.env.PORT;
+const PORT = (process.env.PORT);
 const room =
     [
         {
