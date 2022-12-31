@@ -1,6 +1,8 @@
 import express from 'express';
 import rooms from "./room.json"assert { type: "json" }
 import * as dotenv from 'dotenv'
+dotenv.config()
+
 const app = express();
 const PORT = process.env.PORT;
 const room =
